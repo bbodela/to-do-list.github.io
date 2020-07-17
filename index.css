@@ -1,0 +1,137 @@
+body {
+  background-color: #2c3e50;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  position: static;
+  color: #ffffff;
+  font-size: 7em;
+  text-shadow: rgb(116, 116, 116) 1px 1px 5px;
+  margin-bottom: 0px;
+  margin-top: 30px;
+}
+
+.clicked {
+  color: #7f8c8d;
+}
+
+.form,
+.greetings {
+  display: none;
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  margin: 15px;
+  margin-top: 10px;
+  text-shadow: rgb(75, 75, 75) 1px 0 10px;
+}
+
+.showing {
+  display: block;
+}
+
+.js-toDoForm {
+  text-align: center;
+}
+
+.js-toDoList {
+  height: 235px;
+  overflow-y: auto;
+  color: white;
+  font-weight: bold;
+  text-shadow: rgb(75, 75, 75);
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  max-width: 300px;
+  width: 100%;
+  
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.backgroudImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear; 
+}
+
+.todo {
+  /* position: relative; */
+  padding: 3px 0px 3px 5px;
+  margin-bottom: 3px;
+  border-bottom: 0.5px solid #efefef;
+  opacity: 0.8;
+  transition: 0.3s;
+  text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
+}
+
+.todo:hover {
+  color: rgb(255, 208, 0);
+  opacity: 1;
+}
+
+.todo:last-child {
+  border-bottom: 0px;
+}
+
+.todo:before {
+  content: "✏️";
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0px 15px 0px 0px;
+}
+
+.delBtn {
+  position: relative;
+  float: right;
+}
+
+.js-weather {
+  color: white;
+  float: right;
+  font-weight: bold;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+input {
+  line-height: 25px;
+  width: 350px;
+  font-size:20px;
+  color: wheat;
+  overflow:hidden;
+  border-style:none;
+  border-top-width:0px;
+  border-bottom-width:0px;
+  border-bottom: 0.5px solid #efefef;
+  background:none;
+}
+
+::placeholder {
+  color: white;
+  font-size: 20px;
+}
+
+input:focus {
+  outline: none;
+}
