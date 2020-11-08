@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Something</title>
-  <link rel="stylesheet" href="index.css" />
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<title>📝️ 오늘의 미션</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
 
-<body>
-  <div class="js-weather"></div>
-  <br>
-  <div class="js-clock">
-    <h1>00:00</h1>
-    <!-- <h1 class="js-title">00:00:</h1> -->
-  </div>
-  <form class="js-form form">
-    <input type="text" placeholder="What is your name?" />
-  </form>
-  <h4 class="js-greetings greetings"></h4>
-  <form class="js-toDoForm">
-    <input type="text" placeholder="Write a To Do" />
-  </form>
-  <ul class="js-toDoList">
-  </ul>
-
-  <script src="clock.js"></script>
-  <script src="greeting.js"></script>
-  <script src="todo.js"></script>
-  <script src="backgroud.js"></script>
-  <script src="public/weather_bundle.js"></script>
-</body>
+	<body>
+		<div class="js-weather"></div>
+		<br />
+		<div class="js-clock">
+			<h1>00:00</h1>
+			<!-- <h1 class="js-title">00:00:</h1> -->
+		</div>
+		<form class="js-form form">
+			<input type="text" placeholder="What is your name?" />
+		</form>
+		<h4 class="js-greetings greetings"></h4>
+		<form class="js-toDoForm">
+			<input type="text" placeholder="Write a To Do" />
+		</form>
+		<div class="js-list">
+			<ul class="js-toDoList">
+				<div class="js-list__title">🤔️ DO</div>
+			</ul>
+			<div class="js-divider"></div>
+			<ul class="js-finishList">
+				<div class="js-list__title">😎 DONE!</div>
+			</ul>
+		</div>
+		<script src="clock.js"></script>
+		<script src="greeting.js"></script>
+		<script src="todo.js"></script>
+		<script src="backgroud.js"></script>
+		<script src="public/weather_bundle.js"></script>
+	</body>
 </html>
