@@ -13,8 +13,13 @@ Personal Dashboard New Tab Chrome Extension
 
 ## Try it Out
 
+<<<<<<< HEAD
 ## https://bbodela.github.io/to-do-list.github.io/
 
+=======
+https://bbodela.github.io/to-do-list.github.io/index.html
+----
+>>>>>>> 61d8a90fbcdb7e4ad4d5a64b089fc63b6a21953e
 ### Implementation Completed
 
 1. Clock
