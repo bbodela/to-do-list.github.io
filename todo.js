@@ -11,10 +11,7 @@ let finishedArr = [];
 
 function loadToDos() {
 	const lodedToDos = localStorage.getItem(LS_TODOS);
-	// if(toDosArr === null){}
-	// 저장된 투두가 없으면 아무것도 안한다 todo 공간은 항상 showing일 것이기 때문
 	if (lodedToDos !== null) {
-		// 저장된 투두를 뿌려줌
 		const parsedToDos = JSON.parse(lodedToDos);
 		parsedToDos.forEach(toDo => renderToDo(toDo.text));
 	}
